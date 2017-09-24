@@ -1,21 +1,21 @@
 <template>
-    <div class="team-wrapper"  :style='{ backgroundImage: `url(${team.team.logoUrl})` }'>
-      <div class="team-list">
-        <ul>
-          <li>
-            <p class="header-item">{{team.team.teamLocation + " " + team.team.teamNickname}}</p>
-          </li>
-          <li>
-            <p>Division Rank: {{team.team.record.divisionStanding}}</p>
-          </li>
-          <li>
-            <p>This Week: {{team.score}}</p>
-          </li>
-          <li>
-            <p>Total Score: {{team.team.record.pointsFor}}</p>
-          </li>
-        </ul>
-      </div>
+  <div class="team-wrapper"  :style='{ backgroundImage: `url(${team.team.logoUrl})` }'>
+    <div class="team-list">
+      <ul>
+        <li>
+          <p class="header-item">{{team.team.teamLocation + " " + team.team.teamNickname}}</p>
+        </li>
+        <li>
+          <p>Division Rank: {{team.team.record.divisionStanding}}</p>
+        </li>
+        <li>
+          <p>This Week: {{team.score}}</p>
+        </li>
+        <li>
+          <p>Total Score: {{team.team.record.pointsFor}}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

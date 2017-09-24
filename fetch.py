@@ -1,7 +1,5 @@
-import pymongo
-from pprint import pprint
 from espnff import League
-from collections import defaultdict
+import pymongo
 
 try:
     import simplejson as json

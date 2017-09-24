@@ -26,10 +26,10 @@ var app = express()
 var compiler = webpack(webpackConfig)
 
 var fetchData = function()  {
-  PythonShell.run('../fetch.py', function (err) {
+  console.log("GETTING RESULTS");
+  PythonShell.run('fetch.py',{ scriptPath: '/Users/joe/code/new-football/' }, function (err) {
     if (err) throw err;
     console.log('finished');
-    console.log("GETTING RESULTS");
   });
 }
 
